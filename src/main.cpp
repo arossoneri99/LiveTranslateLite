@@ -1,8 +1,13 @@
 #include <windows.h>
+
+// UI Automation's generated COM headers require the COM base declarations
+// to be available first. Keep objbase/oleauto before UIAutomation.h.
+#include <objbase.h>
+#include <oleauto.h>
+#include <UIAutomation.h>
+
 #include <shellapi.h>
 #include <winhttp.h>
-#include <UIAutomation.h>
-#include <oleauto.h>
 
 #include <atomic>
 #include <chrono>
